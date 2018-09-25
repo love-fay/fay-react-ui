@@ -1,6 +1,6 @@
 {
   "name": "fay-react-ui",
-  "version": "0.0.1-alpha.1",
+  "version": "0.0.1-alpha.3",
   "description": "rj-design",
   "scripts": {
     "start": "node_modules/.bin/webpack-dev-server --config ./webpack.config.js --color --progress",
@@ -12,11 +12,10 @@
     "pub": "npm run pretransfer && npm run transfer && cp package.json pub && cd pub && npm publish && cd .. && rm -rf pub .babelrc"
   },
   "keywords": [
-    "rj",
-    "rjd",
-    "rj-design",
-    "design",
+    "fay",
+    "fay-react-ui",
     "react",
+    "design",
     "react-component",
     "component",
     "components",
@@ -24,14 +23,14 @@
     "frontend"
   ],
   "contributors": [
-    "rj"
+    "love-fay"
   ],
   "bugs": {
-    "url": "http://205.0.0.19/pikachu/rj-design/issues"
+    "url": "https://github.com/love-fay/fay-react-ui/issues"
   },
   "repository": {
     "type": "git",
-    "url": "http://205.0.0.19/pikachu/rj-design"
+    "url": "https://github.com/love-fay/fay-react-ui"
   },
   "main": "*",
   "module": "*",
