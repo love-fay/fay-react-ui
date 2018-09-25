@@ -87,7 +87,7 @@
     "history": "4.7.2",
     "prop-types": "15.6.2",
     "react-cookie": "1.0.5",
-    "fay-react-lib": "0.0.1-alpha.1",
+    "fay-react-lib": "0.0.1-alpha.2",
     "strophe.js": "1.2.15"
   },
   "devEngines": {
