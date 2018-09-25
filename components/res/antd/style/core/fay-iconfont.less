@@ -1,0 +1,21 @@
+@import '../themes/default';
+@import "../mixins/iconfont";
+
+// font-face
+@font-face {
+  font-family: 'anticon';
+  src: url('@{fay-icon-url}.eot'); /* IE9*/
+  src:
+    /* chrome、firefox */
+          url('@{fay-icon-url}.woff') format('woff'),
+            /* chrome、firefox、opera、Safari, Android, iOS 4.2+*/
+          url('@{fay-icon-url}.ttf') format('truetype'),
+            /* iOS 4.1- */
+          url('@{fay-icon-url}.svg#iconfont') format('svg');
+}
+
+.@{iconfont-css-prefix} {
+  .iconfont-mixin();
+}
+
+.@{iconfont-css-prefix}-gitlab:before { content: "\f001"; }

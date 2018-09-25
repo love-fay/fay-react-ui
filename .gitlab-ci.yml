@@ -1,0 +1,30 @@
+image: node
+
+before_script:
+    - eval $(ssh-agent -s)
+    - echo "$SSH_PRIVATE_KEY" | tr -d '\r' | ssh-add - > /dev/null
+    - mkdir -p ~/.ssh
+    - chmod 700 ~/.ssh
+    - echo "$SSH_KNOWN_HOSTS" > ~/.ssh/known_hosts
+    - chmod 644 ~/.ssh/known_hosts
+
+stages:
+    - build
+        
+job_build:
+    stage: build
+    script:
+        - npm config set registry=http://205.0.0.19:7001
+        - npm install
+        - npm run build
+        - ssh fay@205.0.0.19 "rm -r /home/fay/dev/nginx/html/pikachu/rj-design;mkdir -p /home/fay/dev/nginx/html/pikachu/rj-design/; "
+        - scp -r /builds/pikachu/rj-design/dist/site/* fay@205.0.0.19:/home/fay/dev/nginx/html/pikachu/rj-design/
+        - npm run build-demo
+        - scp -r /builds/pikachu/rj-design/site/demo/dist/* fay@205.0.0.19:/home/fay/dev/nginx/html/pikachu/rj-design/
+        - ssh fay@205.0.0.19 "cd /home/fay/dev/nginx/html/pikachu/rj-design;mkdir -p js;mkdir -p css; "
+        - scp -r /builds/pikachu/rj-design/site/demo/dist/demo/js/* fay@205.0.0.19:/home/fay/dev/nginx/html/pikachu/rj-design/js/
+#        - scp -r /builds/pikachu/rj-design/site/demo/dist/demo/css/* fay@205.0.0.19:/home/fay/dev/nginx/html/pikachu/rj-design/css/
+    only:
+        - site
+    tags:
+        - rj-design

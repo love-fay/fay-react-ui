@@ -1,0 +1,71 @@
+@import "../../style/index";
+
+@scroll-prefix-cls: ~"@{rj-prefix}-scroll";
+@scroll-bar-show: ~"@{rj-prefix}-scroll-bar-show";
+@scroll-bar-hidden: ~"@{rj-prefix}-scroll-bar-hidden";
+
+.@{scroll-prefix-cls} {
+  overflow: hidden;
+  text-align: initial;
+  &-main{
+    width: calc(100% - 5px);
+    height: calc(100% - 5px);
+    display: inline-block;
+    overflow: hidden;
+    &-content{
+      position: relative;
+      display: inline-block;
+    }
+    &-x-hidden{
+      height: 100%;
+    }
+    &-y-hidden{
+      width: 100%;
+    }
+  }
+
+  &-bar{
+    &-y{
+      position: relative;
+      width: 5px;
+      background-color: @primary-color;
+      display: inline-block;
+    }
+    &-x{
+      position: relative;
+      top: -5px;
+      height: 5px;
+      background-color: @primary-color;
+    }
+    &-show{
+      animation: @scroll-bar-show 0.5s infinite;
+      animation-iteration-count: 1;
+      animation-fill-mode: forwards;
+    }
+    &-hidden{
+      animation: @scroll-bar-hidden 2s infinite;
+      animation-iteration-count: 1;
+      animation-fill-mode: forwards;
+    }
+  }
+}
+
+@keyframes @scroll-bar-show
+{
+  0% {
+    opacity: 0.01;
+  }
+  100% {
+    opacity: 100;
+  }
+}
+
+@keyframes @scroll-bar-hidden
+{
+  0% {
+    opacity: 100;
+  }
+  100% {
+    opacity: 0.01;
+  }
+}

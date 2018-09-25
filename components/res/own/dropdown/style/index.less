@@ -1,0 +1,19 @@
+@import "../../style/index";
+
+@dropdown-prefix-cls: ~"@{rj-prefix}-dropdown";
+
+.@{dropdown-prefix-cls} {
+  &-menu{
+    >.ant-dropdown-menu-item{
+      padding: 0;
+    }
+    >.ant-dropdown-menu-item-active, >.ant-dropdown-menu-item-selected{
+      background-color: #FFFFFF;
+    }
+  }
+  &-content{
+    width: 100%;
+    height: 100%;
+    padding: 5px 12px;
+  }
+}

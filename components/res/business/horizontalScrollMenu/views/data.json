@@ -1,0 +1,202 @@
+[
+  {
+    "id": "1ed0cb17-470a-4204-ae97-93fa53983aa0",
+    "menuSn": "court config",
+    "menuName": "法庭配置",
+    "menuUrl": "/uums/courtConfig",
+    "menuIcon": null,
+    "menuOrder": 1,
+    "parentId": "ff8080815fb3064e015fb32383710012",
+    "appId": "ff80808159aa70380159af77e1aa0002"
+  },
+  {
+    "id": "6f75bee6-35ad-4da3-8440-ecf99b169d5f",
+    "menuSn": "legal instrument op info",
+    "menuName": "信息文书",
+    "menuUrl": "/uums/legalInstrumentOpInfo",
+    "menuIcon": null,
+    "menuOrder": 1,
+    "parentId": "a471fa13-032b-4fdf-9963-60352dc2006f",
+    "appId": "ff80808159aa70380159af77e1aa0002"
+  },
+  {
+    "id": "ff8080815fb3064e015fb325b8a20019",
+    "menuSn": "log",
+    "menuName": "日志服务",
+    "menuUrl": "/uums/log",
+    "menuIcon": null,
+    "menuOrder": 1,
+    "parentId": "ff8080815fb3064e015fb31c7e3d000c",
+    "appId": "ff80808159aa70380159af77e1aa0002"
+  },
+  {
+    "id": "f5446d0b-07dd-4ee4-96ea-84eb8d6b7bd8",
+    "menuSn": "legal instrument op",
+    "menuName": "样式文书",
+    "menuUrl": "/uums/legalInstrumentOpTable",
+    "menuIcon": null,
+    "menuOrder": 2,
+    "parentId": "a471fa13-032b-4fdf-9963-60352dc2006f",
+    "appId": "ff80808159aa70380159af77e1aa0002"
+  },
+  {
+    "id": "ff8080815fb3064e015fb3267804001b",
+    "menuSn": "data dictionary",
+    "menuName": "数据字典",
+    "menuUrl": "/uums/dict",
+    "menuIcon": null,
+    "menuOrder": 2,
+    "parentId": "ff8080815fb3064e015fb32383710012",
+    "appId": "ff80808159aa70380159af77e1aa0002"
+  },
+  {
+    "id": "ff8080815fb3064e015fb322166c000f",
+    "menuSn": "unify config",
+    "menuName": "统一配置",
+    "menuUrl": null,
+    "menuIcon": "setting",
+    "menuOrder": 100,
+    "parentId": null,
+    "appId": "ff80808159aa70380159af77e1aa0002"
+  },
+  {
+    "id": "4028524259aa70650159b0aa870d0003",
+    "menuSn": "uums",
+    "menuName": "统一用户",
+    "menuUrl": null,
+    "menuIcon": "user",
+    "menuOrder": 101,
+    "parentId": null,
+    "appId": "ff80808159aa70380159af77e1aa0002"
+  },
+  {
+    "id": "a471fa13-032b-4fdf-9963-60352dc2006f",
+    "menuSn": "legal",
+    "menuName": "文书配置",
+    "menuUrl": null,
+    "menuIcon": "ws",
+    "menuOrder": 102,
+    "parentId": null,
+    "appId": "ff80808159aa70380159af77e1aa0002"
+  },
+  {
+    "id": "ff8080815fb3064e015fb31c7e3d000c",
+    "menuSn": "public server",
+    "menuName": "公共服务",
+    "menuUrl": null,
+    "menuIcon": "customer-service",
+    "menuOrder": 103,
+    "parentId": null,
+    "appId": "ff80808159aa70380159af77e1aa0002"
+  },
+  {
+    "id": "ff8080815fb3064e015fb32383710012",
+    "menuSn": "public data",
+    "menuName": "公共数据",
+    "menuUrl": null,
+    "menuIcon": "database",
+    "menuOrder": 104,
+    "parentId": null,
+    "appId": "ff80808159aa70380159af77e1aa0002"
+  },
+  {
+    "id": "69b338874d6faf63e05000cd730604a7",
+    "menuSn": "app",
+    "menuName": "应用系统11111111111111111111111111",
+    "menuUrl": "/uums/app",
+    "menuIcon": null,
+    "menuOrder": 110,
+    "parentId": "ff8080815fb3064e015fb322166c000f",
+    "appId": "ff80808159aa70380159af77e1aa0002"
+  },
+  {
+    "id": "ff80808159aa70380159b0ce8d010007",
+    "menuSn": "uums",
+    "menuName": "机构管理",
+    "menuUrl": "/uums/org",
+    "menuIcon": null,
+    "menuOrder": 120,
+    "parentId": "4028524259aa70650159b0aa870d0003",
+    "appId": "ff80808159aa70380159af77e1aa0002"
+  },
+  {
+    "id": "ff80808159aa70380159b0cea5c40008",
+    "menuSn": "department",
+    "menuName": "部门管理",
+    "menuUrl": "/uums/department",
+    "menuIcon": null,
+    "menuOrder": 130,
+    "parentId": "4028524259aa70650159b0aa870d0003",
+    "appId": "ff80808159aa70380159af77e1aa0002"
+  },
+  {
+    "id": "4028524259aa70650159b0cfb0d20005",
+    "menuSn": "user",
+    "menuName": "用户管理",
+    "menuUrl": "/uums/user",
+    "menuIcon": null,
+    "menuOrder": 141,
+    "parentId": "4028524259aa70650159b0aa870d0003",
+    "appId": "ff80808159aa70380159af77e1aa0002"
+  },
+  {
+    "id": "69b37b4a119d8199e05000cd730605b6",
+    "menuSn": "orgRole",
+    "menuName": "角色管理",
+    "menuUrl": "/uums/orgRole",
+    "menuIcon": null,
+    "menuOrder": 142,
+    "parentId": "4028524259aa70650159b0aa870d0003",
+    "appId": "ff80808159aa70380159af77e1aa0002"
+  },
+  {
+    "id": "69b359142d923d66e05000cd7306052f",
+    "menuSn": "role",
+    "menuName": "系统角色",
+    "menuUrl": "/uums/role",
+    "menuIcon": null,
+    "menuOrder": 150,
+    "parentId": "ff8080815fb3064e015fb322166c000f",
+    "appId": "ff80808159aa70380159af77e1aa0002"
+  },
+  {
+    "id": "69b3604bfc8fa157e05000cd73060558",
+    "menuSn": "/menuResource",
+    "menuName": "菜单资源",
+    "menuUrl": "/uums/menuResource",
+    "menuIcon": null,
+    "menuOrder": 170,
+    "parentId": "ff8080815fb3064e015fb322166c000f",
+    "appId": "ff80808159aa70380159af77e1aa0002"
+  },
+  {
+    "id": "69b3693560028df5e05000cd7306056f",
+    "menuSn": "/controllerResource",
+    "menuName": "请求资源",
+    "menuUrl": "/uums/controllerResource",
+    "menuIcon": null,
+    "menuOrder": 180,
+    "parentId": "ff8080815fb3064e015fb322166c000f",
+    "appId": "ff80808159aa70380159af77e1aa0002"
+  },
+  {
+    "id": "10a0c8f9-03ab-4aa7-9a52-893e61b93a7f",
+    "menuSn": "dataAuthorization",
+    "menuName": "数据权限",
+    "menuUrl": "/uums/dataAuthorization",
+    "menuIcon": null,
+    "menuOrder": 190,
+    "parentId": "ff8080815fb3064e015fb322166c000f",
+    "appId": "ff80808159aa70380159af77e1aa0002"
+  },
+  {
+    "id": "ff808081604f2df601606e14ea9e018e",
+    "menuSn": "message",
+    "menuName": "消息服务",
+    "menuUrl": "/uums/message",
+    "menuIcon": null,
+    "menuOrder": null,
+    "parentId": "ff8080815fb3064e015fb31c7e3d000c",
+    "appId": "ff80808159aa70380159af77e1aa0002"
+  }
+]

@@ -1,0 +1,35 @@
+@import "../../style/index";
+
+@dialog-prefix-cls: ~"@{rj-prefix}-dialog";
+
+.@{dialog-prefix-cls} {
+  position: fixed;
+  background-color: #fff;
+  border: 0;
+  border-radius: 4px;
+  background-clip: padding-box;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+  z-index: 1300;
+  &-header{
+    padding: 10px 24px;
+    border-radius: 4px 4px 0 0;
+    background: @primary-color;
+    color: #FFFFFF;
+    border-bottom: 1px solid #e8e8e8;
+    &-title{
+      display: inline-block;
+    }
+    &-close{
+      display: inline-block;
+      float: right;
+      cursor: pointer;
+    }
+  }
+  &-body{
+    font-size: 14px;
+    line-height: 1.5;
+    height: calc(100% - 42px);
+  }
+}
+
+

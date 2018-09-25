@@ -1,0 +1,123 @@
+@import "../../style/index";
+
+@rySelector-prefix-cls: ~"@{rj-prefix}-rySelector";
+
+.@{rySelector-prefix-cls} {
+  &-card{
+    .ant-card-head{
+      background-color: #f9f9f9;
+      min-height: 30px;
+      line-height: 30px;
+      padding: 0px 10px;
+    }
+    .ant-card-head-title{
+      font-size: 14px;
+      color: #aaa;
+      padding: 0px;
+    }
+    .ant-card-extra{
+      padding: 0px;
+    }
+  }
+  &-selectedList{
+    .listBody{
+      padding: 10px 0px;
+    }
+    .item{
+      position: relative;
+      height: 30px;
+      line-height: 30px;
+      cursor: pointer;
+      .close{
+        position: absolute;
+        top: 0px;
+        right: 10px;
+        display: none;
+      }
+      &:hover{
+        background-color: @primary-1;
+        .close{
+          display: block;
+        }
+      }
+      .content{
+        padding-left: 10px;
+        width: calc(100% - 30px);
+        display:block;
+        overflow: hidden;
+        word-break: keep-all;
+        white-space: nowrap;
+        text-overflow: ellipsis;
+      }
+    }
+  }
+  &-selectedInput{
+    //border: 1px solid @border-color-base;
+    .textOverflow{
+      display:block;
+      overflow: hidden;
+      word-break: keep-all;
+      white-space: nowrap;
+      text-overflow: ellipsis;
+    }
+    .ant-input{
+      height: auto;
+    }
+  }
+  &-latelyContactorsBox{
+    padding: 10px;
+    &-checkbox{
+      display: inline-block;
+      *display: inline;
+      *zoom: 1;
+      vertical-align: middle;
+      margin-right: 4px;
+      .textOverflow{
+        width: 45px;
+        display: inline-block;
+        *display: inline;
+        *zoom: 1;
+        vertical-align: middle;
+        overflow: hidden;
+        word-break: keep-all;
+        white-space: nowrap;
+        text-overflow: ellipsis;
+      }
+    }
+    &-radio{
+      display: inline-block;
+      *display: inline;
+      *zoom: 1;
+      vertical-align: middle;
+      margin-right: 4px;
+      .textOverflow{
+        width: 45px;
+        display: inline-block;
+        *display: inline;
+        *zoom: 1;
+        vertical-align: middle;
+        overflow: hidden;
+        word-break: keep-all;
+        white-space: nowrap;
+        text-overflow: ellipsis;
+      }
+    }
+  }
+  &-queryInput{
+    &-input{
+      outline: 0;
+      border-width: 0px;
+      .ant-input:hover{
+        outline: 0;
+        border-width: 0px;
+      }
+    }
+  }
+  &-rySelectInput{
+    .tBox{
+      position: absolute;
+      z-index: 19860729;
+      width: 356px;
+    }
+  }
+}

@@ -1,0 +1,14 @@
+@import "../../style/index";
+
+@modal-prefix-cls: ~"@{rj-prefix}-modal";
+
+.@{modal-prefix-cls} {
+  padding-bottom: 0;
+  >.ant-modal-content{
+    height: 100%;
+    >.ant-modal-body{
+      height: calc(100% - 43px);
+      padding: 0;
+    }
+  }
+}
